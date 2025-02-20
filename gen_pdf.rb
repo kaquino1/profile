@@ -19,7 +19,7 @@ end
 html_content = File.read(html_file)
 
 # Convert the HTML content into a PDF with proper options
-grover = Grover.new(html_content)
+grover = Grover.new(html_content, options: { 'args' => ['--no-sandbox', '--disable-setuid-sandbox'] })
 
 # Set the PDF options to control page size, margins, and background printing
 pdf = grover.to_pdf(
