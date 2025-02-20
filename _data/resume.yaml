@@ -10,35 +10,44 @@ summary: "Software engineer with three years of full stack development experienc
 
 skills:
   - category: Programming Languages
-    items: "Javascript, Python, SQL, Java, Typescript"
+    items: ["Javascript", "Python", "SQL", "Java", "Typescript", "Ruby"]
   - category: Web Development
-    items: "HTML5, CSS3, Sass/SCSS, Bootstrap, React, Vite, Angualr, EJS, RESTful APIs"
+    items: ["HTML5", "CSS3", "Sass/SCSS", "Bootstrap", "React", "Vite", "Angular", "EJS", "RESTful APIs"]
   - category: Databases
-    items: "PostgreSQL, MySQL, MongoDB"
+    items: ["PostgreSQL", "MySQL", "MongoDB"]
   - category: DevOps & Cloud
-    items: "Docker, AWS (EC2, S3, RDS), Terraform, Terragrunt, Nginx, Github Actions, CI/CD Pipelines"
-  - category: "Frameworks & Tools"
-    items: "Git and GitHub, Ruby, Jekyll, Node.js, Express.js, VS Code, Postman, JIRA, FHIR"
+    items: ["Docker", "AWS (EC2, S3, RDS)", "Terraform", "Terragrunt", "Nginx", "Github Actions", "CI/CD Pipelines"]
+  - category: Frameworks & Tools
+    items: ["Git and GitHub", "Jekyll", "Node.js", "Express.js", "VS Code", "Postman", "JIRA", "FHIR"]
 
 experience:
-  - title: Software Engineer
-    company: xxx
+  - company: xxx
     location: xxx, xx
-    years: "2022 - Present"
-    details:
-      - I did thing this that resulted in this awesome outcome!
-      - I was responsible for this other thing.
-      - I working with this technology that resulted in this metric!
-      - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
-  - title: Software Engineer
-    company: xxx
+    roles:
+      - title: Software Engineer
+        years: "2024 - Present"
+        details:
+          - I did thing this that resulted in this awesome outcome!
+          - I was responsible for this other thing.
+          - I worked with this technology that resulted in this metric!
+          - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
+      - title: Junior Software Engineer
+        years: "2022 - 2024"
+        details:
+          - I did thing this that resulted in this awesome outcome!
+          - I was responsible for this other thing.
+          - I worked with this technology that resulted in this metric!
+          - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
+  - company: xxx
     location: xxx, xx
-    years: "2022 - Present"
-    details:
-      - I did thing this that resulted in this awesome outcome!
-      - I was responsible for this other thing.
-      - I working with this technology that resulted in this metric!
-      - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
+    roles:
+      - title: Junior Software Engineer
+        years: "2022 - 2024"
+        details:
+          - I did thing this that resulted in this awesome outcome!
+          - I was responsible for this other thing.
+          - I worked with this technology that resulted in this metric!
+          - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
 
 education:
   - institution: "xxx"
@@ -46,14 +55,14 @@ education:
       - "Master of Science in Computer Science"
       - "Graduate Certificate in Artificial Intelligence"
     location: xxx, xx
-    year: 2025
+    year: "2025"
   - institution: "xxx"
     degree:
       - "Bachelor of Science in Computer Science"
     location: xxx, xx
-    year: 2021
+    year: "2021"
   - institution: "xxx"
     degree:
       - "Bachelor of Science in Biochemistry, minor in Psychology"
     location: xxx, xx
-    year: 2016
+    year: "2016"

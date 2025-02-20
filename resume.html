@@ -21,16 +21,22 @@ title: Resume
       {% for job in site.data.resume.experience %}
         <li class='list-item mt-1'>
           <div class='d-flex'>
-            <span><span class='fw-bold'>{{ job.company }}</span> | {{ job.location }}</span>
-            <span class='ms-auto'>{{  job.years }}</span>
+            <span class='fw-bold'>{{ job.company }}</span>
+            <span class='ms-auto'>{{  job.location }}</span>
           </div>
-          <ul class='sublist'>
-            {% for detail in job.details %}
-              <li class='sublist-item'>
-                {{ detail }}
-              </li>
-            {% endfor %}
-          </ul>
+          {% for role in job.roles %}
+            <div class='d-flex'>
+              <span>{{ role.title }}</span>
+              <span class='ms-auto'>{{  role.years }}</span>
+            </div>
+            <ul class='sublist'>
+              {% for detail in role.details %}
+                <li class='sublist-item'>
+                  {{ detail }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
         </li>
       {% endfor %}
     </ul>
@@ -62,7 +68,7 @@ title: Resume
     <ul class='list-unstyled mainlist'>
       {% for skill in site.data.resume.skills %}
       <li class='list-item mt-1'>
-        <span class='fw-bold'>{{ skill.category }}:</span> {{ skill.items }}
+        <span class='fw-bold'>{{ skill.category }}:</span> {{ skill.items | join: ", " }}
       </li>
       {% endfor %}
     </ul>
