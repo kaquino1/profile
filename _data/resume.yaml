@@ -1,0 +1,59 @@
+name: Katrina Aquino
+contact:
+  email: hello@example.com
+  phone: xxx-xxx-xxxx
+  location: New York Metropolitan Area
+  github: github.com/kaquino1
+  linkedin: linkedin.com/in/xxx
+
+summary: "Software engineer with three years of full stack development experience. Designing and implementing Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam incidunt aspernatur iure soluta, cumque provident fugiat animi delectus consequuntur!"
+
+skills:
+  - category: Programming Languages
+    items: "Javascript, Python, SQL, Java, Typescript"
+  - category: Web Development
+    items: "HTML5, CSS3, Sass/SCSS, Bootstrap, React, Vite, Angualr, EJS, RESTful APIs"
+  - category: Databases
+    items: "PostgreSQL, MySQL, MongoDB"
+  - category: DevOps & Cloud
+    items: "Docker, AWS (EC2, S3, RDS), Terraform, Terragrunt, Nginx, Github Actions, CI/CD Pipelines"
+  - category: "Frameworks & Tools"
+    items: "Git and GitHub, Ruby, Jekyll, Node.js, Express.js, VS Code, Postman, JIRA, FHIR"
+
+experience:
+  - title: Software Engineer
+    company: xxx
+    location: xxx, xx
+    years: "2022 - Present"
+    details:
+      - I did thing this that resulted in this awesome outcome!
+      - I was responsible for this other thing.
+      - I working with this technology that resulted in this metric!
+      - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
+  - title: Software Engineer
+    company: xxx
+    location: xxx, xx
+    years: "2022 - Present"
+    details:
+      - I did thing this that resulted in this awesome outcome!
+      - I was responsible for this other thing.
+      - I working with this technology that resulted in this metric!
+      - Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in?
+
+education:
+  - institution: "xxx"
+    degree:
+      - "Master of Science in Computer Science"
+      - "Graduate Certificate in Artificial Intelligence"
+    location: xxx, xx
+    year: 2025
+  - institution: "xxx"
+    degree:
+      - "Bachelor of Science in Computer Science"
+    location: xxx, xx
+    year: 2021
+  - institution: "xxx"
+    degree:
+      - "Bachelor of Science in Biochemistry, minor in Psychology"
+    location: xxx, xx
+    year: 2016

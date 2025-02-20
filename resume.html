@@ -1,0 +1,71 @@
+---
+layout: resume
+title: Resume
+---
+
+<div class='main d-flex flex-column my-3 mx-5'>
+  <h1 class='name mx-auto'>{{ site.data.resume.name }}</h1>
+  <div class='content mb-2 contact mx-auto d-flex flex-column'>
+    <div class='mx-auto'>{{ site.data.resume.contact.email }} | {{ site.data.resume.contact.phone }} | {{ site.data.resume.contact.location }}</div>
+    <div class='mx-auto'><a href='https://{{page.github}}'>{{ site.data.resume.contact.github }}</a> | <a href='https://{{page.linkedin}}'>{{ site.data.resume.contact.linkedin }}</a></div>
+  </div>
+  
+  <h2 class='section-header fs-4 border-bottom border-2 border-dark'>Summary</h2>
+  <div class='content mb-2 description'>
+    {{ site.data.resume.summary }}
+  </div>
+
+  <h2 class='section-header fs-4 border-bottom border-2 border-dark'>Work Experience</h2>
+  <div class='content mb-2'>
+    <ul class='list-unstyled mainlist'>
+      {% for job in site.data.resume.experience %}
+        <li class='list-item mt-1'>
+          <div class='d-flex'>
+            <span><span class='fw-bold'>{{ job.company }}</span> | {{ job.location }}</span>
+            <span class='ms-auto'>{{  job.years }}</span>
+          </div>
+          <ul class='sublist'>
+            {% for detail in job.details %}
+              <li class='sublist-item'>
+                {{ detail }}
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2 class='section-header fs-4 border-bottom border-2 border-dark'>Education</h2>
+  <div class='content mb-2'>
+    <ul class='list-unstyled mainlist'>
+      {% for edu in site.data.resume.education %}
+        <li class='list-item mt-1'>
+          <div class='d-flex'>
+            <span><span class='fw-bold'>{{ edu.institution }}</span> | {{ edu.location }}</span>
+            <span class='ms-auto'>{{ edu.year }}</span>
+          </div>
+          <ul class='list-unstyled sublist'>
+            {% for item in edu.degree %}
+              <li class='sublist-item'>
+                {{ item }}
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2 class='section-header fs-4 border-bottom border-2 border-dark'>Technical Skills</h2>
+  <div class='content mb-2'>
+    <ul class='list-unstyled mainlist'>
+      {% for skill in site.data.resume.skills %}
+      <li class='list-item mt-1'>
+        <span class='fw-bold'>{{ skill.category }}:</span> {{ skill.items }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+</div>
